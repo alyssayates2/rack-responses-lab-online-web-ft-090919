@@ -1,7 +1,7 @@
 class Application
 
   def call(env)
-    resp = Rack::Responses.new
+    resp = Rack::Responses
 
     morning = Kernel.rand(0..12)
     afternoon = Kernel.rand(12..24)
